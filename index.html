@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1 id="title">Calculator</h1>
+    <p id="description">This is a simple calculator</p>
+    <main class="page-main">
+        <div id="calculator-container"></div>
+
+        <input id="result" class="input" type="text" placeholder="0">
+        <button id="clear" onclick="clearInput()">C</button>
+        <button id="del" onclick="deleteInput()">DEL</button>
+        <button id="percent" onclick="appendInput('%')">%</button>
+        <button id="divide" onclick="appendInput('/')">/</button>
+        <button onclick="appendInput('7')">7</button>
+        <button onclick="appendInput('8')">8</button>
+        <button onclick="appendInput('9')">9</button>
+        <button id="add" onclick="appendInput('+')">+</button>
+        <button onclick="appendInput('4')">4</button>
+        <button onclick="appendInput('5')">5</button>
+        <button onclick="appendInput('6')">6</button>
+        <button id="subtract" onclick="appendInput('-')">-</button>
+        <button id="1" onclick="appendInput('1')">1</button> 
+        <button id="2" onclick="appendInput('2')">2</button> 
+        <button id="3" onclick="appendInput('3')">3</button> 
+        <button id="multiply" onclick="appendInput('*')">*</button>
+        <button onclick="appendInput('0')">0</button>
+        <button onclick="appendInput('.')">.</button>
+        <button id="equal" onclick="calculateResult()">=</button> 
+    </div>
+
+        <script src="script.js"></script>
+        <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    </main>
+</body>
+</html>  
